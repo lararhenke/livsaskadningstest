@@ -8,7 +8,7 @@
 :root { --blue:#071f3f; --blue2:#0b2d5c; --gold:#f5b400; --white:#ffffff; --soft:#f3f6fb; --text:#081b35; }
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial, Helvetica, sans-serif;background:var(--blue);color:white}
-.school-brand{position:fixed;top:22px;right:30px;display:flex;align-items:center;gap:10px;z-index:10;color:white;text-shadow:0 2px 10px rgba(0,0,0,.45);opacity:.96}.school-a{font-size:46px;font-weight:900;line-height:.85;font-family:Arial,Helvetica,sans-serif;border:2px solid rgba(255,255,255,.85);width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center}.school-text{font-size:16px;font-weight:800;line-height:1.02;text-align:left;letter-spacing:.01em}
+.school-brand{position:fixed;top:22px;right:30px;display:flex;align-items:center;gap:9px;z-index:10;color:white;text-shadow:0 2px 10px rgba(0,0,0,.45);opacity:.98}.school-logo-img{width:45px;height:auto;display:block}.school-text{font-size:16px;font-weight:800;line-height:1.02;text-align:left;letter-spacing:.01em;color:white}
 .lh-logo{position:fixed;top:18px;left:22px;width:54px;height:54px;background:#061a36;color:white;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:12px;line-height:1;border:1px solid rgba(255,255,255,.25);z-index:10}
 .screen{display:none;min-height:100vh}.screen.active{display:block}
 .hero{min-height:100vh;background:linear-gradient(90deg,rgba(7,31,63,.88),rgba(7,31,63,.45)), url('bilder/startsida.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;padding:95px 24px 50px}
@@ -34,7 +34,7 @@ input{width:100%;padding:14px;border-radius:8px;border:1px solid #cfd7e3;font-si
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:22px 0}.box{background:rgba(255,255,255,.94);color:var(--text);border-radius:16px;padding:20px}.box h3{margin-top:0;color:var(--blue2)}
 .percentrow{display:flex;gap:12px;flex-wrap:wrap}.pc{width:112px;height:112px;border-radius:50%;border:8px solid #2c6bd7;display:flex;align-items:center;justify-content:center;flex-direction:column;font-weight:900;color:var(--blue);background:white;text-align:center;padding:6px}.pc span{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#607086}.pc small{font-size:15px;line-height:1.05}.pc.yellow{border-color:var(--gold)} .pc.red{border-color:#c93b3b}.source-note{font-size:12px;color:#607086;margin-top:12px}.source-note a{color:#0b2d5c}
 .longtext{background:rgba(255,255,255,.96);color:var(--text);border-radius:18px;padding:26px;line-height:1.65;font-size:16px}.bottom-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:34px 0 10px}.footer{text-align:center;color:rgba(255,255,255,.75);font-size:12px;margin-top:32px}
-@media(max-width:700px){.result-hero{grid-template-columns:1fr}.school-brand{top:18px;right:18px}.school-a{font-size:38px}.school-text{font-size:13px}.lh-logo{width:45px;height:45px;font-size:10px}}
+@media(max-width:700px){.result-hero{grid-template-columns:1fr}.school-brand{position:fixed;top:22px;right:30px;display:flex;align-items:center;gap:9px;z-index:10;color:white;text-shadow:0 2px 10px rgba(0,0,0,.45);opacity:.98}.school-logo-img{width:45px;height:auto;display:block}.school-text{font-size:16px;font-weight:800;line-height:1.02;text-align:left;letter-spacing:.01em;color:white}.lh-logo{width:45px;height:45px;font-size:10px}}
 
 #question{
   font-size:clamp(19px,2.1vw,27px);
@@ -47,7 +47,7 @@ input{width:100%;padding:14px;border-radius:8px;border:1px solid #cfd7e3;font-si
 </head>
 <body>
 <div class="lh-logo">LÄRAR<br>HENKE</div>
-<div class="school-brand"><div class="school-a">a</div><div class="school-text">alströmer<br>gymnasiet</div></div>
+<div class="school-brand"><img class="school-logo-img" src="bilder/alstromer_logo_transparent_cropped.png" alt="Alströmergymnasiet"><div class="school-text">alströmer<br>gymnasiet</div></div>
 
 <section id="start" class="screen active">
   <div class="hero">
